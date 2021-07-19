@@ -1,0 +1,378 @@
+* {
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-image: url(../img/fondo.jpg);
+    background-attachment: fixed;
+    font-family: sans-serif;
+    height: 100vh;
+  }
+  
+  .tech,
+  .user {
+    min-width: 700px;
+    min-height: 1420px;
+    margin-bottom: 1rem;
+    background-color: black;
+  }
+  
+  .pointer {
+    cursor: pointer;
+  }
+  
+  .visible {
+    display: block;
+  }
+  
+  .invisible {
+    display: none;
+  }
+  
+  .CreateAccount {
+    flex-wrap: wrap;
+    max-width: 700px;
+    height: 40%;
+    background: #000;
+    color: white;
+    left: 50%;
+    position: relative;
+    transform: translate(-50%, -100%);
+    box-sizing: border-box;
+    top: 60%;
+  }
+  
+  .choice {
+    text-align: center;
+  }
+  
+  .choice button {
+    padding: 10px 15px;
+    color: black;
+    font-size: 20px;
+  }
+  
+  .choice img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    top: -50px;
+    left: calc(45% - 45px);
+  }
+  
+  .CreateAccount h1 {
+    margin: 0px;
+    padding-top: 1rem;
+    text-align: center;
+    font-size: 22px;
+  }
+  
+  .CreateAccount label {
+    margin: 0px;
+    padding: 0px;
+    font-weight: bold;
+    display: block;
+  }
+  
+  .CreateAccount input {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .CreateAccount input[type="email"],
+  .CreateAccount input[type="text"],
+  .CreateAccount input[type="password"],
+  .CreateAccount input[type="age"],
+  .CreateAccount input[type="number"], textarea {
+    border: none;
+    border-bottom: 1px solid white;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: white;
+    font-size: 16px;
+  }
+
+  textarea {
+      flex-wrap: wrap;
+      resize: none;
+      font-family: sans-serif;
+      overflow-y: scroll;
+  }
+  
+  .CreateAccount input[type="submit"] {
+    margin-left: 220px;
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 200px;
+    background: #b00f22;
+    color: white;
+    font-size: 20px;
+    border-radius: 20px;
+  }
+  
+  .checkbox {
+    display: grid;
+    padding: 0px 25%;
+  }
+  
+  .checkbox input[type="checkbox"] {
+    display: none;
+  }
+  
+  .checkbox label {
+    color: #0074d9;
+    padding: 5px 15px 5px 51px;
+    display: inline-block;
+    position: relative;
+    font-size: 1em;
+    border-radius: 3px;
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  
+  .checkbox label:hover {
+    background: rgba(0, 116, 217, 0.2);
+    border-radius: 3px;
+  }
+  
+  .checkbox label::before {
+    content: "";
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    background: none;
+    border: 3px solid #0074d9;
+    position: absolute;
+    left: 17px;
+    top: 4px;
+    border-radius: 3px;
+  }
+  
+  .checkbox input:checked + label {
+    padding: 5px 15px;
+    background: #0074d9;
+    border-radius: 2px;
+    color: white;
+  }
+  
+  .checkbox input:checked + label::before {
+    display: none;
+  }
+  
+  .checkboxService {
+    display: grid;
+    padding: 0px 25%;
+  }
+  
+  .checkboxService input[type="checkbox"] {
+    display: none;
+  }
+  
+  .checkboxService label {
+    color: #0074d9;
+    padding: 5px 15px 5px 51px;
+    display: inline-block;
+    position: relative;
+    font-size: 1em;
+    border-radius: 3px;
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  
+  .checkboxService label:hover {
+    background: rgba(0, 116, 217, 0.2);
+    border-radius: 3px;
+  }
+  
+  .checkboxService label::before {
+    content: "";
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    background: none;
+    border: 3px solid #0074d9;
+    position: absolute;
+    left: 17px;
+    top: 4px;
+    border-radius: 3px;
+  }
+  
+  .checkboxService input:checked + label {
+    padding: 5px 15px;
+    background: #0074d9;
+    border-radius: 2px;
+    color: white;
+  }
+  
+  .checkboxService input:checked + label::before {
+    display: none;
+  }
+  
+  .user input:valid + span::after {
+    position: absolute;
+    content: "\f058";
+    font-family: FontAwesome;
+    color: green;
+  }
+  
+  span {
+    width: 40px;
+  }
+  
+  form {
+    padding: 20px;
+  }
+  
+  .user input:invalid + span::after {
+    position: absolute;
+    content: "\f057";
+    font-family: FontAwesome;
+    color: red;
+  }
+
+  .tech input:valid + span::after {
+    position: absolute;
+    content: "\f058";
+    font-family: FontAwesome;
+    color: green;
+  }
+
+  .tech input:invalid + span::after {
+    position: absolute;
+    content: "\f057";
+    font-family: FontAwesome;
+    color: red;
+  }
+  
+  .CreateAccount a {
+    display: grid;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgray;
+    margin-top: 10px;
+  }
+  
+  .CreateAccount a:hover {
+    color: white;
+  }
+  
+  @media screen and (max-width: 1024px) {
+      body {
+        background-image: url(../img/fondo.jpg);
+        background-attachment: fixed;
+        font-family: sans-serif;
+        height: 100vh;
+      }
+
+      .tech,
+      .user {
+      flex-wrap: wrap;
+    min-width: 100%;
+    min-height: auto;
+    margin-bottom: 1rem;
+    background-color: black;
+  }
+  .CreateAccount {
+    flex-wrap: wrap;
+    max-width: 700px;
+    height: 70%;
+    background: #000;
+    color: white;
+    left: 50%;
+    position: relative;
+    transform: translate(-50%, -100%);
+    box-sizing: border-box;
+    top: 80%;
+  }
+  }
+  
+  @media screen and (max-width: 767px) {
+    .body {
+        background-image: url(../img/fondo.jpg);
+        background-attachment: fixed;
+        font-family: sans-serif;
+        height: 100vh;
+      }
+
+      .tech,
+  .user {
+      flex-wrap: wrap;
+    min-width: 100%;
+    min-height: auto;
+    margin-bottom: 1rem;
+    background-color: black;
+  }
+  }
+  
+  @media screen and (max-width: 480px) {
+    body {
+        background-image: url(../img/fondo.jpg);
+        background-attachment: fixed;
+        font-family: sans-serif;
+        height: 100vh;
+      }
+
+      .tech,
+  .user {
+      flex-wrap: wrap;
+    min-width: 100%;
+    min-height: auto;
+    margin-bottom: 1rem;
+    background-color: black;
+  }
+    .CreateAccount input[type="submit"] {
+      margin-left: auto;
+    }
+  }
+  
+  @media screen and (max-width: 320px) {
+    body {
+        background-image: url(../img/fondo.jpg);
+        background-attachment: fixed;
+        font-family: sans-serif;
+        height: 100vh;
+      }
+
+      .tech,
+  .user {
+      flex-wrap: wrap;
+    min-width: 100%;
+    min-height: auto;
+    margin-bottom: 1rem;
+    background-color: black;
+  }
+  .CreateAccount input[type="submit"] {
+    margin-left: auto;
+  }
+  }
+
+  @media screen and (max-width: 280px) {
+    body {
+      background-image: url(../img/fondo.jpg);
+      background-attachment: fixed;
+      font-family: sans-serif;
+      height: 100vh;
+    }
+
+    .tech,
+.user {
+    flex-wrap: wrap;
+  min-width: 100%;
+  min-height: auto;
+  margin-bottom: 1rem;
+  background-color: black;
+}
+.CreateAccount input[type="submit"] {
+  margin-left: auto;
+}
+  }
+  
